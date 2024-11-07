@@ -46,3 +46,25 @@ $(document).ready(function () {
     $("#nav-links").toggleClass("hidden"); // Show or hide nav links on small screens
   });
 });
+
+
+// JQUERY Wildan
+$(document).ready(function () {
+    $(".confettiButton").on("click", function () {
+        confettiAnimation(this);
+    });
+});
+
+function confettiAnimation(element) {
+    // Dapatkan posisi tombol di layar
+    const rect = element.getBoundingClientRect();
+    const originX = (rect.left + rect.width / 2) / window.innerWidth;
+    const originY = (rect.top + rect.height / 2) / window.innerHeight;
+
+    // Luncurkan confetti dari posisi tombol
+    confetti({
+        particleCount: 100,
+        spread: 100,
+        origin: { x: originX, y: originY }
+    });
+}
