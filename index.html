@@ -18,17 +18,35 @@
         <div class="flex-auto">
           <div class="flex justify-between items-center">
             <div>
-              <a href="#" class="md:flex items-center py-4 px-2">
+              <a href="#" class="flex items-center py-4 px-2">
                 <img src="assets/logo.svg" alt="Logo" class="w-40 mr-2" />
               </a>
             </div>
-            <div class="md:flex items-center gap-10">
+            <!-- Add Menu Hamburger -->
+            <button id="nav-toggle" type="button" class="md:hidden p-2 w-10 h-10 text-gray-500 focus:outline-none" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg id="hamburger-icon" class="w-6 h-6 hover:bg-[#C3362C] hover:text-white hover:rounded" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+
+            <!-- Default Navbar -->
+            <div class="hidden md:flex items-center gap-10">
               <a href="" class="py-4 px-2 hover:text-[#C3362C] text-black">Tentang</a>
               <a href="" class="py-4 px-2 hover:text-[#C3362C] text-black">Cara Kerja</a>
               <a href="" class="py-4 px-2 hover:text-[#C3362C] text-black">Teknologi</a>
               <a href="" class="py-4 px-2 hover:text-[#C3362C] text-black">Berita</a>
               <a href="" class="py-3 px-7 hover:text-[#C3362C] text-black rounded-lg border border-black">Hasil Suara</a>
             </div>
+          </div>
+
+          <!-- Hamburger Button -->
+          <div id="nav-links" class="hidden md:flex-row">
+            <a href="" class="block py-4 px-2 hover:text-[#C3362C] text-black">Tentang</a>
+            <a href="" class="block py-4 px-2 hover:text-[#C3362C] text-black">Cara Kerja</a>
+            <a href="" class="block py-4 px-2 hover:text-[#C3362C] text-black">Teknologi</a>
+            <a href="" class="block py-4 px-2 hover:text-[#C3362C] text-black">Berita</a>
+            <a href="" class="block py-3 px-7 hover:text-[#C3362C] text-black text-center rounded-lg border border-black">Hasil Suara</a>
           </div>
         </div>
       </div>

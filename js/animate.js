@@ -37,3 +37,10 @@ $(".highlight").hover(
     });
   }
 );
+
+// Toggle Hamburger Button - 1302223047
+$(document).ready(function() {
+  $('#nav-toggle').click(function() {
+    $('#nav-links').toggleClass('hidden'); // Show or hide nav links on small screens
+  });
+});
