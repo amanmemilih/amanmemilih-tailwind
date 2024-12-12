@@ -23,22 +23,22 @@ $(document).ready(function () {
 });
 
 // Highlight animation - 1302223083
-$(document).ready(function () {
-  $(".highlight").hover(
-    //hover state
-    function () {
-      $(this).css({
-        "background-color": "#ffff77",
-      });
-    },
-    //default state
-    function () {
-      $(this).css({
-        "background-color": "",
-      });
-    }
-  );
-});
+// $(document).ready(function () {
+//   $(".highlight").hover(
+//     //hover state
+//     function () {
+//       $(this).css({
+//         "background-color": "#ffff77",
+//       });
+//     },
+//     //default state
+//     function () {
+//       $(this).css({
+//         "background-color": "",
+//       });
+//     }
+//   );
+// });
 
 // Toggle Hamburger Button - 1302223047
 $(document).ready(function () {

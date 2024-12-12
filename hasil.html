@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman Memilih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-screen-lg mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <a href="index.html">
+            <img src="assets/logoam.png" alt="Logo" class="h-12 w-auto" />
+          </a>
+        </div>
+        <nav class="flex space-x-6">
+          <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Tentang</a>
+          <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Cara Kerja</a>
+          <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Teknologi</a>
+          <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Berita</a>
+          <a href="#" class="px-4 py-2 rounded-full text-white bg-[#FF7272] transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-300" style="font-family: 'Plus Jakarta Sans'">Lihat Suara</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="relative max-w-screen-lg mx-auto px-4 py-16 text-center">
+      <h1 class="text-5xl font-bold mb-4 relative z-10" style="font-family: 'Plus Jakarta Sans'">
+        Pantau real count Presiden <br />
+        dan Wakil Presiden
+      </h1>
+      <br />
+      <p class="text-gray-500 mb-8 relative z-10">Versi 16 Februari 2024 11:00 WIB</p>
+
+      <div class="bg-gradient-to-r from-[#FFD596] to-[#FF7272] rounded-md relative z-10">
+        <div class="bg-white bg-opacity-60 rounded-md px-6 py-3">
+          <span class="text-black font-medium" style="font-family: 'Plus Jakarta Sans'">Wilayah Pemilihan:</span>
+          <span class="text-gray-600 font-normal" style="font-family: 'Plus Jakarta Sans'">Prov. Sumatera Barat / Kota Solok / Kec. Lubuk Sikarah / Kel. Tanah Garam / TPS 001</span>
+        </div>
+      </div>
+
+      <!-- Dokumen Section -->
+      <section class="mt-16 relative z-10">
+        <h2 class="text-4xl font-bold mb-8" style="font-family: 'Plus Jakarta Sans'">Hasil Pindai Dokumen</h2>
+        <div class="grid grid-cols-1 place-items-center md:grid-cols-3 gap-8">
+          <img src="assets/form1.png" alt="Dokumen 1" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(0)" />
+          <img src="assets/form2.png" alt="Dokumen 2" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(1)" />
+          <img src="assets/form3.png" alt="Dokumen 3" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(2)" />
+        </div>
+      </section>
+    </main>
+    <div class="absolute left-0 right-0 top-0 bottom-0 z-0 overflow-hidden mt-20">
+      <video autoplay muted loop class="min-w-full min-h-full object-cover opacity-20">
+        <source src="assets/plexus.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="fixed inset-0 hidden z-50 flex items-center justify-center bg-black bg-opacity-75">
+      <div class="relative">
+        <img id="popupImage" src="" alt="Popup" class="max-w-screen-lg max-h-screen" />
+        <button class="fixed top-4 right-4 bg-white text-black rounded-full px-3 py-1 shadow-lg hover:bg-gray-200" onclick="closePopup()">✕</button>
+        <button class="fixed left-4 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full px-4 py-2 shadow-lg hover:bg-gray-200" onclick="prevImage()">&#8592;</button>
+        <button class="fixed right-4 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full px-4 py-2 shadow-lg hover:bg-gray-200" onclick="nextImage()">&#8594;</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8">
+      <div class="max-w-screen-lg mx-auto text-center mb-6 mt-24">
+        <p class="text-5xl font-medium bg-gradient-to-r from-[#FFD596] to-[#FF7272] text-transparent bg-clip-text mb-2" style="font-family: 'Plus Jakarta Sans'">Pantau, Laporkan, Aman.</p>
+        <br />
+        <span class="text-black text-4xl font-bold mr-1">Aman</span><span class="text-[#FF7272] text-4xl font-bold">Memilih</span>
+        <div class="mt-8 flex justify-center items-center space-x-4 pt-24">
+          <img src="https://via.placeholder.com/40" alt="Logo" class="w-12 h-12" />
+          <div>
+            <p class="text-sm">Prototype by AmanMemilih</p>
+            <p class="text-sm text-gray-500">Disclaimer | Privacy Policy</p>
+          </div>
+        </div>
+        <div class="mt-8 flex justify-center space-x-4 text-gray-500">
+          <a href="#" class="hover:text-gray-800"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="#" class="hover:text-gray-800"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#" class="hover:text-gray-800"><i class="fab fa-xing"></i> X</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const images = ["assets/form1.png", "assets/form2.png", "assets/form3.png"];
+      let currentIndex = 0;
+
+      function openPopup(index) {
+        currentIndex = index;
+        const popup = document.getElementById("popup");
+        const popupImage = document.getElementById("popupImage");
+        popupImage.src = images[currentIndex];
+        popup.classList.remove("hidden");
+      }
+
+      function closePopup() {
+        const popup = document.getElementById("popup");
+        popup.classList.add("hidden");
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        const popupImage = document.getElementById("popupImage");
+        popupImage.src = images[currentIndex];
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        const popupImage = document.getElementById("popupImage");
+        popupImage.src = images[currentIndex];
+      }
+    </script>
+  </body>
+</html>

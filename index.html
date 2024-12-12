@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
   </head>
 
@@ -14,42 +15,22 @@
     <!-- Section 1 - 1302223047 -->
     <!-- Navbar -->
     <nav>
-      <div class="max-w-7xl mx-auto px-6 mt-10">
-        <div class="flex-auto">
-          <div class="flex justify-between items-center">
-            <div>
-              <a href="#" class="flex items-center py-4 px-2">
-                <img src="assets/logo.svg" alt="Logo" class="w-40 mr-2" />
-              </a>
-            </div>
-            <!-- Add Menu Hamburger -->
-            <button id="nav-toggle" type="button" class="md:hidden p-2 w-10 h-10 text-gray-500 focus:outline-none" aria-controls="navbar-default" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg id="hamburger-icon" class="w-6 h-6 hover:bg-[#C3362C] hover:text-white hover:rounded" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-
-            <!-- Default Navbar -->
-            <div class="hidden md:flex items-center gap-10">
-              <a href="" class="py-4 px-2 hover:text-[#C3362C] text-black">Tentang</a>
-              <a href="" class="py-4 px-2 hover:text-[#C3362C] text-black">Cara Kerja</a>
-              <a href="" class="py-4 px-2 hover:text-[#C3362C] text-black">Teknologi</a>
-              <a href="" class="py-4 px-2 hover:text-[#C3362C] text-black">Berita</a>
-              <a href="" class="py-3 px-7 hover:text-[#C3362C] text-black rounded-lg border border-black">Hasil Suara</a>
-            </div>
+      <header class="bg-white shadow-sm">
+        <div class="max-w-screen-lg mx-auto px-4 py-4 flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <a href="index.html">
+              <img src="assets/logoam.png" alt="Logo" class="h-12 w-auto" />
+            </a>
           </div>
-
-          <!-- Hamburger Button -->
-          <div id="nav-links" class="hidden md:flex-row">
-            <a href="" class="block py-4 px-2 hover:text-[#C3362C] text-black">Tentang</a>
-            <a href="" class="block py-4 px-2 hover:text-[#C3362C] text-black">Cara Kerja</a>
-            <a href="" class="block py-4 px-2 hover:text-[#C3362C] text-black">Teknologi</a>
-            <a href="" class="block py-4 px-2 hover:text-[#C3362C] text-black">Berita</a>
-            <a href="" class="block py-3 px-7 hover:text-[#C3362C] text-black text-center rounded-lg border border-black">Hasil Suara</a>
-          </div>
+          <nav class="flex space-x-6">
+            <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Tentang</a>
+            <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Cara Kerja</a>
+            <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Teknologi</a>
+            <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Berita</a>
+            <a href="hasil.html" class="px-4 py-2 rounded-full text-white bg-[#FF7272] transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-300">Lihat Suara</a>
+          </nav>
         </div>
-      </div>
+      </header>
     </nav>
 
     <!-- Content -->
@@ -67,120 +48,128 @@
     </div>
 
     <!-- Section 2 - 1302223047 -->
-    <div class="flex items-center justify-center space-x-4 my-24 mb-24 px-4">
-      <div class="bg-[#C3362C] text-white font-bold text-3xl px-4 py-2 rounded-md">AmanMemilih</div>
-      <p class="text-gray-700 max-w-3xl">
+    <div class="flex items-center justify-center space-x-16 my-24 mb-48 px-4">
+      <span class="text-black text-4xl font-bold mr-[-60px]">Aman</span><span class="text-[#FF7272] text-4xl font-bold">Memilih</span>
+      <p class="text-gray-700 max-w-4xl">
         Aplikasi berbasis teknologi blockchain dengan sistem yang tidak terpusat dan menjamin keamanan data, terutama data suara dan data pengguna. Kami menjaga informasi, menjamin integritas data, keamanan, dan mengeliminasi kemungkinan
         bocornya suatu informasi.
       </p>
     </div>
 
     <!-- Container Box -->
-    <div class="container mx-auto flex flex-row mb-24 justify-center">
+    <div class="container mx-auto flex flex-row mb-4 justify-between space-x-4">
       <!-- Box 1 -->
-      <div class="king container ml-12 flex flex-col justify-center box hover:border-black rounded-lg shadow-lg border-2 border-gray-300 transition-all duration-300">
-        <div class="p-6 flex flex-col justify-center">
-          <button class="mx-32 py-4 px-6 rounded-full border border-black text-black font-bold bg-white transition-all duration-300 hover:bg-[#C3362C] hover:text-white hover:border-transparent">AmanRekap</button>
+      <div class="king container flex flex-col justify-center box hover:border-black rounded-lg shadow-lg border-2 border-gray-200 transition-all duration-300">
+        <div class="px-4 py-12 flex flex-col justify-center">
+          <button class="mx-32 py-4 px-6 rounded-full text-black font-bold bg-[#ECECEC] transition-all duration-300 hover:bg-[#FF7272] hover:text-[#FFFFFF]">AmanRekap</button>
           <p class="my-4 text-center">Aplikasi ini dibuat untuk membantu petugas KPPS dalam mengunggah formulir C1. Penggunaan teknologi blockhain untuk melindungi data dari manipulasi.</p>
         </div>
         <div class="flex justify-center">
-          <img class=" " src="assets/iPhones 1.svg" alt="iPhones" />
+          <img class=" " src="assets/p1.png" alt="demoapp" />
         </div>
       </div>
       <!-- Box 2 -->
-      <div class="king container mx-6 flex flex-col justify-center box hover:border-black rounded-lg shadow-lg border-2 border-gray-300 transition-all duration-300">
-        <div class="p-6 flex flex-col justify-center">
-          <button class="mx-32 py-4 px-6 rounded-full border border-black text-black font-bold bg-white transition-all duration-300 hover:bg-[#C3362C] hover:text-white hover:border-transparent">AmanHasil</button>
+      <div class="king container flex flex-col justify-center box hover:border-black rounded-lg shadow-lg border-2 border-gray-200 transition-all duration-300">
+        <div class="px-4 py-12 flex flex-col justify-center">
+          <button class="mx-32 py-4 px-6 rounded-full text-black font-bold bg-[#ECECEC] transition-all duration-300 hover:bg-[#FF7272] hover:text-[#FFFFFF]">AmanHasil</button>
           <p class="my-4 text-center">Memusatkan segala informasi dari sumber sumber yang kredibel, hal ini juga mencegah kamu mengurangi resiko informasi hoax.</p>
         </div>
         <div class="flex justify-center">
-          <img class=" " src="assets/iPhones 2.svg" alt="iPhones" />
+          <img class=" " src="assets/p2.png" alt="demoapp" />
         </div>
       </div>
       <!-- Box 3 -->
-      <div class="king container mr-12 flex flex-col justify-center box hover:border-black rounded-lg shadow-lg border-2 border-gray-300 transition-all duration-300">
-        <div class="p-6 flex flex-col justify-center">
-          <button class="mx-32 py-4 px-6 rounded-full border border-black text-black font-bold bg-white transition-all duration-300 hover:bg-[#C3362C] hover:text-white hover:border-transparent">AmanLapor</button>
-          <p class="my-4 text-center">Tempat pengaduan atau bertanya mengenai proses vote dari setiap VotingRoom. berinteraksi dengan Smartchat, atau guide book.</p>
+      <div class="king container flex flex-col justify-center box hover:border-black rounded-lg shadow-lg border-2 border-gray-200 transition-all duration-300">
+        <div class="px-4 py-12 flex flex-col justify-center">
+          <button class="mx-32 py-4 px-6 rounded-full text-black font-bold bg-[#ECECEC] transition-all duration-300 hover:bg-[#FF7272] hover:text-[#FFFFFF]">AmanLapor</button>
+          <p class="my-4 text-center"> Tempat pengaduan atau bertanya mengenai proses vote dari setiap VotingRoom. berinteraksi dengan Smartchat, atau guide book.</p>
         </div>
         <div class="flex justify-center">
-          <img class=" " src="assets/iPhones 3.svg" alt="iPhones" />
+          <img class=" " src="assets/p2.png" alt="demoapp" />
         </div>
       </div>
     </div>
 
     <!-- Section 3 - 1302220001 -->
-    <div class="container mx-auto flex flex-col items-center relative">
-      <div class="flex justify-center mt-20 mr-16 space-x-4">
-        <div class="flex flex-col items-center w-64 h-72 p-4 pt-14 bg-white border border-inherit rounded-lg shadow-lg">
-          <img src="assets/undraw_shared_workspace_re_3gsu 1.png" alt="Pantau hasil real count" class="w-full h-24 object-contain" />
-          <h2 class="text-lg font-bold mt-4 text-left w-full">Pantau hasil real count</h2>
-          <p class="text-xs text-gray-600 mt-1">Ketahui hasil rekapitulasi suara dari pasangan calon pilihan kamu secara real-time</p>
-        </div>
-        <div class="flex flex-col items-center w-64 h-72 p-4 bg-white bg-opacity-30 backdrop-blur-md border border-inherit rounded-lg shadow-lg">
-          <img src="assets/Illustration - Business, error _ comment, review, account, profile, user, list, problem.png" alt="Pantau hasil real count" class="w-32 h-32" />
-          <h2 class="text-lg font-bold mt-6 text-left w-full">Laporkan</h2>
-          <p class="text-xs text-gray-600 mt-1">Jika terdapat kesalahan pada hasil rekapitulasi suara, segera laporkan ke Bawaslu setempat.</p>
-        </div>
+    <div class="flex justify-center">
+      <div class="flex items-center justify-center rounded-md text-center p-20">
+        <h1 class="leading-normal text-black text-6xl">2 Langkah agar AmanMemilih</h1>
       </div>
-      <div class="absolute top-3 left-0 flex flex-col items-center w-full h-full p-4 bg-white bg-opacity-30 backdrop-blur-md">
-        <div class="w-64 h-28 bg-red-700 flex items-center justify-center rounded-md text-center p-4">
-          <h1 class="leading-normal text-white text-3xl">2 Langkah agar AmanMemilih</h1>
-        </div>
-        <div class="flex justify-center mt-10 space-x-4">
-          <div class="flex flex-col items-center w-64 h-72 p-4 pt-14 bg-white bg-white bg-opacity-75 backdrop-blur-md border border-inherit rounded-lg shadow-lg king">
-            <img src="assets/undraw_shared_workspace_re_3gsu 1.png" alt="Pantau hasil real count" class="w-full h-24 object-contain" />
-            <h2 class="text-lg font-bold mt-4 text-left w-full">Pantau hasil real count</h2>
-            <p class="text-xs text-gray-600 mt-1">Ketahui hasil rekapitulasi suara dari pasangan calon pilihan kamu secara real-time</p>
-          </div>
-          <div class="flex flex-col items-center w-64 h-72 p-4 bg-white bg-opacity-75 backdrop-blur-md border border-inherit rounded-lg shadow-lg king">
-            <img src="assets/Illustration - Business, error _ comment, review, account, profile, user, list, problem.png" alt="Pantau hasil real count" class="w-32 h-32" />
-            <h2 class="text-lg font-bold mt-6 text-left w-full">Laporkan</h2>
-            <p class="text-xs text-gray-600 mt-1">Jika terdapat kesalahan pada hasil rekapitulasi suara, segera laporkan ke Bawaslu setempat.</p>
-          </div>
-        </div>
+    </div>
+      
+    </div>
+    <div class="flex justify-center space-x-8">
+      <div class="flex flex-col items-center w-96 h-112 p-8 pt-20 bg-white border border-inherit rounded-lg shadow-lg">
+        <img src="assets/undraw_shared_workspace_re_3gsu 1.png" alt="Pantau hasil real count" class="w-full h-40 object-contain" />
+        <h2 class="text-2xl font-bold mt-8 text-left w-full">Pantau hasil real count</h2>
+        <p class="text-base text-gray-600 mt-4">Ketahui hasil rekapitulasi suara dari pasangan calon pilihan kamu secara real-time</p>
+      </div>
+      <div class="flex flex-col items-center w-96 h-112 p-8 bg-white bg-opacity-30 backdrop-blur-md border border-inherit rounded-lg shadow-lg">
+        <img src="assets/Illustration - Business, error _ comment, review, account, profile, user, list, problem.png" alt="Pantau hasil real count" class="w-48 h-48" />
+        <h2 class="text-2xl font-bold mt-10 text-left w-full">Laporkan</h2>
+        <p class="text-base text-gray-600 mt-4">Jika terdapat kesalahan pada hasil rekapitulasi suara, segera laporkan ke Bawaslu setempat.</p>
       </div>
     </div>
 
     <!-- Section 4 - 1302223083 -->
-    <div class="container mx-auto flex flex-col items-center relative m-24">
-      <div class="flex flex-col items-center mt-24">
-        <h2 class="text-4xl font-bold text-gray-800 mt-16 text-center">Keamanan & Kepercayaan adalah yang Utama</h2>
-        <p class="text-center mt-4 text-gray-600">AmanMemilih menggunakan teknologi blockchain yang terpercaya untuk memastikan keamanan dan transparansi dalam proses pemilihan.</p>
+    <div class="max-w-screen-lg mx-auto px-4 py-16 mt-20">
+      <!-- Judul -->
+      <div class="text-center mb-12">
+        <h1 class="text-5xl font-medium text-black mb-4" style="font-family: 'Plus Jakarta Sans';">
+          Keamanan dan Kepercayaan
+          <br/>adalah yang Utama
+        </h1>
+        <p class="text-gray-600 mt-10">
+          Untuk menjamin demokrasi yang aman dan dapat dipercaya kami menggunakan pendekatan sebagai berikut
+        </p>
       </div>
-      <div class="grid grid-cols-2 gap-8 mt-8">
-        <!-- Added grid with 2 columns -->
-        <div class="highlight bg-white rounded-lg p-6 flex items-center">
-          <img src="assets/Group1.png" alt="Biometric Verification" class="king w-16 h-16 mr-4" />
+  
+      <!-- Konten -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Biometric Verification -->
+        <div class="flex items-start">
+          <img src="assets/group1.png" alt="Biometric Verification" class="w-20 h-20 mr-4">
           <div>
-            <h2 class="text-xl font-bold text-gray-800 mb-2">Biometric Verification</h2>
+            <h2 class="text-lg font-bold text-black mb-2">Biometric Verification</h2>
             <p class="text-gray-600">
-              AmanMemilih menggunakan verifikasi biometrik berupa sidik jari atau deteksi wajah yang terkoneksi dengan handphone pengguna dengan privasi data yang dipastikan terjaga, untuk memastikan pemilihan tidak diwakilkan.
+              AmanMemilih menggunakan verifikasi biometrik berupa sidik jari atau deteksi wajah yang terkoneksi dengan
+              handphone pengguna dengan privasi data yang dipastikan terjaga, untuk memastikan pemilihan tidak diwakilkan.
             </p>
           </div>
         </div>
-        <div class="highlight bg-white rounded-lg p-6 flex items-center">
-          <img src="assets/Group2.png" alt="Penggunaan Sistem Enkripsi" class="king w-16 h-16 mr-4" />
+  
+        <!-- IPFS as Decentralize Storage -->
+        <div class="flex items-start">
+          <img src="assets/group3.png" alt="IPFS" class="w-20 h-20 mr-4">
           <div>
-            <h2 class="text-xl font-bold text-gray-800 mb-2">IPFS as Decentralize Storage</h2>
-            <p class="text-gray-600">IPFS (Interplanetary File Sistem) memungkinkan tidak ada data yang bisa dimanipulasi dan dipastikan semua data tidak mengalami kerusakan. Bahkan AmanMemilih tidak dapat memodifikasi data yang ada.</p>
-          </div>
-        </div>
-        <div class="highlight bg-white rounded-lg p-6 flex items-center">
-          <img src="assets/Group3.png" alt="Penggunaan Teknologi Blockchain" class="king w-16 h-16 mr-4" />
-          <div>
-            <h2 class="text-xl font-bold text-gray-800 mb-2">Secure Hash Algorithm</h2>
+            <h2 class="text-lg font-bold text-black mb-2">IPFS as Decentralize Storage</h2>
             <p class="text-gray-600">
-              Sebelum data dikirim ke blockchain, data akan terlebih dahulu di hashing dengan SHA-256, walaupun data dapat diakses secara publik, tetap tidak ada yang tahu isi data tersebut kecuali disamakan dengan data aslinya.
+              IPFS (Interplanetary File Sistem) memungkinkan tidak ada data yang bisa dimanipulasi dan dipastikan semua
+              data tidak mengalami kerusakan. Bahkan AmanMemilih tidak dapat memodifikasi data yang ada.
             </p>
           </div>
         </div>
-        <div class="highlight bg-white rounded-lg p-6 flex items-center">
-          <img src="assets/Group4.png" alt="Penggunaan Sistem Enkripsi" class="king w-16 h-16 mr-4" />
+  
+        <!-- Secure Hash Algorithm -->
+        <div class="flex items-start">
+          <img src="assets/group2.png" alt="Secure Hash" class="w-20 h-20 mr-4">
           <div>
-            <h2 class="text-xl font-bold text-gray-800 mb-2">Blockchain as Decentralize DB</h2>
+            <h2 class="text-lg font-bold text-black mb-2">Secure Hash Algorithm</h2>
             <p class="text-gray-600">
-              Blockchain adalah solusi untuk melindungi data tersebut, dengan transaksi yang satu arah, memiliki nilai ID yang unik, dan ledger yang dapat diakses siapa saja. Data voting akan tetap orisinil, rahasia dan transparan.
+              Sebelum data dikirim ke blockchain, data akan terlebih dahulu di hashing dengan SHA-256, walaupun data
+              dapat diakses secara publik, tetap tidak ada yang tahu isi data tersebut kecuali disamakan dengan data aslinya.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Blockchain as Decentralize DB -->
+        <div class="flex items-start">
+          <img src="assets/group4.png" alt="Blockchain" class="w-20 h-20 mr-4">
+          <div>
+            <h2 class="text-lg font-bold text-black mb-2">Blockchain as Decentralize DB</h2>
+            <p class="text-gray-600">
+              Blockchain adalah solusi untuk melindungi data tersebut, dengan transaksi yang satu arah, memiliki nilai ID
+              yang unik, dan ledger yang dapat diakses siapa saja. Data voting akan tetap orisinal, rahasia dan transparan.
             </p>
           </div>
         </div>
