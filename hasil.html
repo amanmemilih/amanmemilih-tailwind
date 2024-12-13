@@ -36,21 +36,23 @@
       <p class="text-gray-500 mb-8 relative z-10">Versi 16 Februari 2024 11:00 WIB</p>
 
       <div class="bg-gradient-to-r from-[#FFD596] to-[#FF7272] rounded-md relative z-10">
-        <div class="bg-white bg-opacity-60 rounded-md px-6 py-3">
+        <div class="bg-white bg-opacity-60 rounded-md px-6 py-3 text-left">
           <span class="text-black font-medium" style="font-family: 'Plus Jakarta Sans'">Wilayah Pemilihan:</span>
           <span class="text-gray-600 font-normal" style="font-family: 'Plus Jakarta Sans'">Prov. Sumatera Barat / Kota Solok / Kec. Lubuk Sikarah / Kel. Tanah Garam / TPS 001</span>
         </div>
       </div>
 
       <!-- Dokumen Section -->
-      <section class="mt-16 relative z-10">
-        <h2 class="text-4xl font-bold mb-8" style="font-family: 'Plus Jakarta Sans'">Hasil Pindai Dokumen</h2>
-        <div class="grid grid-cols-1 place-items-center md:grid-cols-3 gap-8">
-          <img src="assets/form1.png" alt="Dokumen 1" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(0)" />
-          <img src="assets/form2.png" alt="Dokumen 2" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(1)" />
-          <img src="assets/form3.png" alt="Dokumen 3" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(2)" />
-        </div>
-      </section>
+      <div class="">
+        <section class="mt-16 relative z-10">
+          <h2 class="text-4xl font-bold mb-8" style="font-family: 'Plus Jakarta Sans'">Hasil Pindai Dokumen</h2>
+          <div class="grid grid-cols-1 place-items-center md:grid-cols-3 gap-8">
+            <img src="assets/form1.png" alt="Dokumen 1" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(0)" />
+            <img src="assets/form2.png" alt="Dokumen 2" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(1)" />
+            <img src="assets/form3.png" alt="Dokumen 3" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(2)" />
+          </div>
+        </section>
+      </div>
     </main>
     <div class="absolute left-0 right-0 top-0 bottom-0 z-0 overflow-hidden mt-20">
       <video autoplay muted loop class="min-w-full min-h-full object-cover opacity-20">
@@ -70,21 +72,26 @@
 
     <!-- Footer -->
     <footer class="py-8">
-      <div class="max-w-screen-lg mx-auto text-center mb-6 mt-24">
-        <p class="text-5xl font-medium bg-gradient-to-r from-[#FFD596] to-[#FF7272] text-transparent bg-clip-text mb-2" style="font-family: 'Plus Jakarta Sans'">Pantau, Laporkan, Aman.</p>
-        <br />
+      <div class="max-w-screen-lg mx-auto text-center mb-6 mt-16">
+        <p class="text-5xl font-medium bg-gradient-to-r from-[#FFD596] to-[#FF7272] text-transparent bg-clip-text mb-12" style="font-family: 'Plus Jakarta Sans'">Pantau, Laporkan, Aman.</p>
         <span class="text-black text-4xl font-bold mr-1">Aman</span><span class="text-[#FF7272] text-4xl font-bold">Memilih</span>
-        <div class="mt-8 flex justify-center items-center space-x-4 pt-24">
-          <img src="https://via.placeholder.com/40" alt="Logo" class="w-12 h-12" />
-          <div>
+        <div class="mt-10">
+          <div class="flex justify-center items-center space-x-4">
+            <a href="index.html">
+              <img src="assets/logoam.png" alt="Logo" class="h-20 w-auto" />
+            </a>
+          </div>
+          <div class="pt-10">
             <p class="text-sm">Prototype by AmanMemilih</p>
             <p class="text-sm text-gray-500">Disclaimer | Privacy Policy</p>
           </div>
         </div>
-        <div class="mt-8 flex justify-center space-x-4 text-gray-500">
-          <a href="#" class="hover:text-gray-800"><i class="fab fa-facebook"></i> Facebook</a>
-          <a href="#" class="hover:text-gray-800"><i class="fab fa-instagram"></i> Instagram</a>
-          <a href="#" class="hover:text-gray-800"><i class="fab fa-xing"></i> X</a>
+        <div>
+          <div class="mt-8 flex justify-center space-x-4 text-gray-500">
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-xing"></i> X</a>
+          </div>
         </div>
       </div>
     </footer>
