@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AmanMemilih</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.cdnfonts.com/css/alata" rel="stylesheet" />
@@ -33,38 +34,153 @@
       </header>
     </nav>
 
-  <!-- Content -->
-  <div class="md:container md:mx-auto">
-    <div class="grid grid-cols-2 p-8 place-items-center">
-      <div>
-        <p class="font-medium text-[60px] md:text-[40] font-">
-          Pemungutan Suara Modern dengan Keamanan Tinggi dan Fleksibilitas
-        </p>
-        <p class="font-normal text-[20px] md:text-[10] mt-12">
-          Dengan AmanMemilih voting dimanapun tanpa ada kecurangan dan human
-          error didalam demokrasi. Dengan menggunakan teknologi blockchain
-          yang terdesentralisasi dan transparan.
-        </p>
-        <button class="font-normal text-[20] bg-[#191A23] text-white px-10 py-4 rounded-lg mt-12">
-          Unduh Sekarang
-        </button>
+    <!-- Content -->
+    <div class="md:container md:mx-auto">
+      <div class="grid grid-cols-2 p-8 place-items-center">
+        <div>
+          <p class="font-bold text-[60px] md:text-[40] font-" style="font-family: 'Plus Jakarta Sans'">
+            Pemungutan Suara Modern dengan Keamanan Tinggi dan Fleksibilitas
+          </p>
+          <p class="font-normal text-[20px] md:text-[10] mt-12" style="font-family: 'Plus Jakarta Sans'">
+            Dengan AmanMemilih voting dimanapun tanpa ada kecurangan dan human
+            error didalam demokrasi. Dengan menggunakan teknologi blockchain
+            yang terdesentralisasi dan transparan.
+          </p>
+          <button class="font-normal text-[20] bg-gradient-to-b from-[#FF7272]/80 via-[#FF7272]/80 to-[#FFD596]/80 text-white px-10 py-4 rounded-lg mt-12">
+            Unduh Sekarang
+          </button>
+        </div>
+        <div class="items-center">
+          <img src="assets/Illustration.png" alt="" />
+        </div>
       </div>
-      <div class="items-center">
-        <img src="assets/Illustration.png" alt="" />
-      </div>
+      <!-- Particle.js Background -->
+      <div id="particles-js" class="absolute left-0 right-0 top-0 bottom-0 z-0 overflow-hidden mt-20"></div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script>
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#3A3A3A",
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000",
+              },
+              polygon: {
+                nb_sides: 5,
+              },
+              image: {
+                src: "img/github.svg",
+                width: 100,
+                height: 100,
+              },
+            },
+            opacity: {
+              value: 0.5,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#3A3A3A",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 400,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        });
+      </script>
     </div>
-  </div>
 
     <!-- ----- SECTION CARD INFO ----- -->
 
     <div class="flex items-center justify-center space-x-16 my-24 mb-48 px-4">
-      <span class="text-black text-6xl font-bold mr-[-60px]">Aman</span><span class="text-[#FF7272] text-6xl font-bold">Memilih</span>
+      <span class="text-black text-5xl font-bold mr-[-60px]">Aman</span><span class="text-[#FF7272] text-5xl font-bold">Memilih</span>
       <p class="text-gray-700 text-lg max-w-4xl" style="font-family: 'Plus Jakarta Sans'">
         Aplikasi berbasis teknologi blockchain dengan sistem yang tidak terpusat dan menjamin keamanan data, terutama data suara dan data pengguna. Kami menjaga informasi, menjamin integritas data, keamanan, dan mengeliminasi kemungkinan
         bocornya suatu informasi.
       </p>
     </div>
-  </div>
+
 
     <!-- Container Box -->
     <div class="container mx-auto flex flex-row mb-4 justify-between space-x-4">
