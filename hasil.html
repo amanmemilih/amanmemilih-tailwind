@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aman Memilih</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans" rel="stylesheet" />
   </head>
   <body class="bg-gray-50 text-gray-800">
     <!-- Header -->
     <header class="bg-white shadow-sm">
-      <div class="max-w-screen-lg mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex mx-auto pl-32 pr-32 px-4 py-4 flex items-center justify-between">
         <div class="flex items-center space-x-2">
           <a href="index.html">
-            <img src="assets/logoam.png" alt="Logo" class="h-12 w-auto" />
+            <img src="assets/logoam.png" alt="Logo" class="h-14 w-auto" />
           </a>
         </div>
         <nav class="flex space-x-6">
-          <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Tentang</a>
-          <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Cara Kerja</a>
-          <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Teknologi</a>
-          <a href="#" class="text-gray-600 pt-2 hover:text-[#FF7272]">Berita</a>
-          <a href="#" class="px-4 py-2 rounded-full text-white bg-[#FF7272] transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-300" style="font-family: 'Plus Jakarta Sans'">Lihat Suara</a>
+          <a href="#" class="text-lg text-gray-800 pt-2 hover:text-[#FF7272]">Tentang</a>
+          <a href="#" class="text-lg text-gray-800 pt-2 hover:text-[#FF7272]">Cara Kerja</a>
+          <a href="#" class="text-lg text-gray-800 pt-2 hover:text-[#FF7272]">Teknologi</a>
+          <a href="#" class="text-lg text-gray-800 pt-2 hover:text-[#FF7272]">Berita</a>
+          <a href="hasil.html" class="text-lg px-4 py-2 rounded-full text-white bg-[#FF7272] transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-300">Lihat Suara</a>
         </nav>
       </div>
     </header>
@@ -47,23 +48,134 @@
         <section class="mt-16 relative z-10">
           <h2 class="text-4xl font-bold mb-8" style="font-family: 'Plus Jakarta Sans'">Hasil Pindai Dokumen</h2>
           <div class="grid grid-cols-1 place-items-center md:grid-cols-3 gap-8">
-            <img src="assets/form1.png" alt="Dokumen 1" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(0)" />
-            <img src="assets/form2.png" alt="Dokumen 2" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(1)" />
-            <img src="assets/form3.png" alt="Dokumen 3" class="shadow-lg object-cover h-full cursor-pointer" onclick="openPopup(2)" />
+            <img src="assets/form1.png" alt="Dokumen 1" class="shadow-lg object-cover h-192 w-full cursor-pointer transform transition-transform duration-300 hover:scale-105" onclick="openPopup(0)" />
+            <img src="assets/form2.png" alt="Dokumen 2" class="shadow-lg object-cover h-192 w-full cursor-pointer transform transition-transform duration-300 hover:scale-105" onclick="openPopup(1)" />
+            <img src="assets/form3.png" alt="Dokumen 3" class="shadow-lg object-cover h-192 w-full cursor-pointer transform transition-transform duration-300 hover:scale-105" onclick="openPopup(2)" />
           </div>
         </section>
       </div>
     </main>
-    <div class="absolute left-0 right-0 top-0 bottom-0 z-0 overflow-hidden mt-20">
-      <video autoplay muted loop class="min-w-full min-h-full object-cover opacity-20">
-        <source src="assets/plexus.mp4" type="video/mp4" />
-      </video>
+
+    <!-- Particle.js Background -->
+    <div id="particles-js" class="absolute left-0 right-0 top-0 bottom-0 z-0 overflow-hidden mt-24 opacity-50">
+      <script>
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#3A3A3A",
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000",
+              },
+              polygon: {
+                nb_sides: 5,
+              },
+              image: {
+                src: "img/github.svg",
+                width: 100,
+                height: 100,
+              },
+            },
+            opacity: {
+              value: 0.5,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#3A3A3A",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 400,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        });
+      </script>
     </div>
 
     <!-- Popup Modal -->
     <div id="popup" class="fixed inset-0 hidden z-50 flex items-center justify-center bg-black bg-opacity-75">
-      <div class="relative">
-        <img id="popupImage" src="" alt="Popup" class="max-w-screen-lg max-h-screen" />
+      <div class="relative h-auto w-auto max-w-4xl max-h-full">
+        <img id="popupImage" src="" alt="Popup" class="h-auto w-auto max-w-full max-h-full scale-150" />
         <button class="fixed top-4 right-4 bg-white text-black rounded-full px-3 py-1 shadow-lg hover:bg-gray-200" onclick="closePopup()">✕</button>
         <button class="fixed left-4 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full px-4 py-2 shadow-lg hover:bg-gray-200" onclick="prevImage()">&#8592;</button>
         <button class="fixed right-4 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full px-4 py-2 shadow-lg hover:bg-gray-200" onclick="nextImage()">&#8594;</button>
@@ -71,32 +183,54 @@
     </div>
 
     <!-- Footer -->
-    <footer class="py-8">
-      <div class="max-w-screen-lg mx-auto text-center mb-6 mt-16">
-        <p class="text-5xl font-medium bg-gradient-to-r from-[#FFD596] to-[#FF7272] text-transparent bg-clip-text mb-12" style="font-family: 'Plus Jakarta Sans'">Pantau, Laporkan, Aman.</p>
-        <span class="text-black text-4xl font-bold mr-1">Aman</span><span class="text-[#FF7272] text-4xl font-bold">Memilih</span>
-        <div class="mt-10">
-          <div class="flex justify-center items-center space-x-4">
+    <footer class="w-full bg-white border-t border-gray-200 py-8 px-22">
+      <div class="max-w-screen-lg mx-auto text-center mb-5 mt-16">
+        <p class="text-[52px] font-medium bg-gradient-to-r from-[#FFD596] to-[#FF7272] text-transparent bg-clip-text mb-5" style="font-family: 'Plus Jakarta Sans'">Pantau, Laporkan, Aman.</p>
+        <span class="text-black text-[44px] font-bold mr-1" style="font-family: 'Plus Jakarta Sans'">Aman</span><span class="text-[#FF7272] text-[44px] font-bold" style="font-family: 'Plus Jakarta Sans'">Memilih</span>
+      </div>
+
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mt-14 py-5">
+        <div class="mt-10 mx-24">
+          <div class="flex justify-left items-center space-x-4">
             <a href="index.html">
               <img src="assets/logoam.png" alt="Logo" class="h-20 w-auto" />
             </a>
           </div>
-          <div class="pt-10">
-            <p class="text-sm">Prototype by AmanMemilih</p>
-            <p class="text-sm text-gray-500">Disclaimer | Privacy Policy</p>
+          <div class="pt-10 text-left">
+            <p class="text-[18px] text-[#A6A6A6]">Prototype by AmanMemilih</p>
+            <p class="text-[16px] text-[#A6A6A6]">Disclaimer | Privacy Policy</p>
           </div>
         </div>
-        <div>
-          <div class="mt-8 flex justify-center space-x-4 text-gray-500">
-            <a href="#" class="hover:text-gray-800"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="#" class="hover:text-gray-800"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#" class="hover:text-gray-800"><i class="fab fa-xing"></i> X</a>
+
+        <div class="flex flex-col items-start mx-24 md:items-center mt-6 md:mt-20 space-y-1">
+          <p class="text-sm text-gray-500 mb-2 text-center">Connect With Us</p>
+          <div class="flex space-x-2">
+            <!-- Ikon Facebook -->
+            <a href="#" class="w-8 h-8 flex items-center justify-center hover:bg-gray-300">
+              <img src="assets/logo_facebook.png" alt="Logo" class="h-5 w-auto" />
+            </a>
+            <!-- Ikon Instagram -->
+            <a href="#" class="w-8 h-8 flex items-center justify-center hover:bg-gray-300">
+              <img src="assets/logo_ig.png" alt="Logo" class="h-6 w-auto" />
+            </a>
+            <!-- Ikon X -->
+            <a href="#" class="w-8 h-8 flex items-center justify-center hover:bg-gray-300">
+              <img src="assets/logo_x.png" alt="Logo" class="h-6 w-auto" />
+            </a>
           </div>
         </div>
       </div>
     </footer>
 
+    <!-- Hasil -->
+
     <script>
+      document.getElementById("popup").addEventListener("click", function (event) {
+        if (event.target === this) {
+          closePopup();
+        }
+      });
+
       const images = ["assets/form1.png", "assets/form2.png", "assets/form3.png"];
       let currentIndex = 0;
 
@@ -105,11 +239,14 @@
         const popup = document.getElementById("popup");
         const popupImage = document.getElementById("popupImage");
         popupImage.src = images[currentIndex];
+        popupImage.classList.add("enlarged");
         popup.classList.remove("hidden");
       }
 
       function closePopup() {
         const popup = document.getElementById("popup");
+        const popupImage = document.getElementById("popupImage");
+        popupImage.classList.remove("enlarged");
         popup.classList.add("hidden");
       }
 
