@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans" rel="stylesheet" />
   </head>
-  <body class="bg-gray-50 text-gray-800">
+  <body class="bg-gray-50 text-gray-800 ">
     <!-- Header -->
     <nav>
       <header class="bg-white shadow-sm">
@@ -23,7 +23,7 @@
             <a href="#" class="text-lg text-gray-800 pt-2 hover:text-[#FF7272]">Cara Kerja</a>
             <a href="#" class="text-lg text-gray-800 pt-2 hover:text-[#FF7272]">Teknologi</a>
             <a href="#" class="text-lg text-gray-800 pt-2 hover:text-[#FF7272]">Berita</a>
-            <a href="hasil.html" class="text-lg px-4 py-2 rounded-full text-white bg-[#FF7272] transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-300">Lihat Suara</a>
+            <a href="lihat_suara.html" class="text-lg px-4 py-2 rounded-xl text-white bg-[#FF7272] transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-300">Lihat Suara</a>
           </nav>
         </div>
       </header>
@@ -40,11 +40,10 @@
 
 
       <!-- Paslon Percentage Section -->
-      <div class="flex justify-center gap-6 mt-10 px-4">
+      <div class="flex justify-center gap-6 mt-10 px-4 relative z-10">
+
         <!-- Kartu Kandidat 1 -->
-        <div
-        class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative"
-      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative">
         <!-- Nomor Kandidat -->
         <div
           class="absolute top-[150px] left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#FF7272] text-white rounded-full flex items-center justify-center font-semibold text-[28px] z-10"
@@ -80,9 +79,7 @@
       </div>
   
         <!-- Kartu Kandidat 2 -->
-        <div
-        class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative"
-      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative">
         <!-- Nomor Kandidat -->
         <div
           class="absolute top-[150px] left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#FF7272] text-white rounded-full flex items-center justify-center font-semibold text-[28px] z-10"
@@ -118,9 +115,7 @@
       </div>
   
         <!-- Kartu Kandidat 3 -->
-        <div
-        class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative"
-      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative">
         <!-- Nomor Kandidat -->
         <div
           class="absolute top-[150px] left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#FF7272] text-white rounded-full flex items-center justify-center font-semibold text-[28px] z-10"
@@ -327,10 +322,8 @@
               </div>
               <!-- Tombol Cari -->
               <div>
-                <button class="px-16 py-2 bg-red-400 text-white font-bold rounded-3xl hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-300" 
-                style="font-family: 'Plus Jakarta Sans'">
-                  Cari
-                </button>
+                <a href="hasil.html" class="px-16 py-2 text-lg px-4 py-2 rounded-3xl text-white bg-[#FF7272] transition-all duration-300 hover:bg-red-500 hover:text-white hover:border hover:border-gray-300" 
+                style="font-family: 'Plus Jakarta Sans'">Cari</a>
               </div>
             </div>
           </div>
