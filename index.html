@@ -16,7 +16,7 @@
   <body>
     <!-- ----- SECTION DASHBOARD AND NAVBAR ----- -->
     <nav>
-      <header class="bg-white shadow-sm">
+      <header class="bg-white fixed top-0 left-0 w-full z-50">
         <div class="flex mx-auto pl-32 pr-32 px-4 py-6 flex items-center justify-between">
           <div class="flex items-center space-x-2">
             <a href="index.html">
@@ -28,14 +28,14 @@
             <a href="#" class="text-lg text-gray-800 px-2 py-2.5 hover:text-[#FF7272]">Cara Kerja</a>
             <a href="#" class="text-lg text-gray-800 px-2 py-2.5 hover:text-[#FF7272]">Teknologi</a>
             <a href="#" class="text-lg text-gray-800 px-4 py-2.5 hover:text-[#FF7272]">Berita</a>
-            <a href="lihat_suara.html" class="text-lg px-6 py-2.5 rounded-xl text-white bg-[#FF7272] transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-gray-300">Lihat Suara</a>
+            <a href="lihat_suara.html" class="text-lg px-6 py-2.5 rounded-xl text-white bg-[#FF7272] transition-all duration-300 hover:bg-[#FF5252] hover:text-white">Lihat Suara</a>
           </nav>
         </div>
       </header>
     </nav>
 
     <!-- Content -->
-    <div class="md:container md:mx-auto pt-8">
+    <div class="md:container md:mx-auto pt-8 mt-[70px]">
       <div class="grid grid-cols-2 p-8 place-items-center">
         <div class="gap-y-35">
           <p class="font-semibold text-[60px] md:text-[40]" style="font-family: 'Plus Jakarta Sans'">
@@ -187,9 +187,9 @@
     <div class="container mx-auto flex flex-row mb-4 justify-between space-x-4">
       <!-- Box 1 -->
       <div class="king container flex flex-col justify-center box hover:border-black rounded-2xl shadow-2xl shadow-[#FF7272]/10 border-2 border-gray-100 transition-all duration-300">
-        <div class="px-4 py-12 flex flex-col justify-center">
-          <button class="mx-32 py-4 px-6 rounded-full text-black font-bold bg-[#ECECEC] transition-all duration-300 hover:bg-[#FF7272] hover:text-[#FFFFFF]">AmanRekap</button>
-          <p class="my-4 text-center">Aplikasi ini dibuat untuk membantu petugas KPPS dalam mengunggah formulir C1. Penggunaan teknologi blockhain untuk melindungi data dari manipulasi.</p>
+        <div class="px-12 py-12 flex flex-col justify-center">
+          <button class="mx-24 py-4 px-6 rounded-full text-black font-bold bg-[#ECECEC] transition-all duration-300 hover:bg-[#FF7272] hover:text-[#FFFFFF]">AmanRekap</button>
+          <p class="my-4 text-center">Memastikan petugas hanya mengunggah surat suara melalui aplikasi ini yang langsung terhubung ke sistem kami, sehingga masyarakat dapat melihat surat suara setiap daerah di Indonesia.</p>
         </div>
         <div class="flex justify-center">
           <img class=" " src="assets/p1.png" alt="demoapp" />
@@ -197,11 +197,11 @@
       </div>
       <!-- Box 2 -->
       <div class="king container flex flex-col justify-center box hover:border-black rounded-2xl shadow-2xl shadow-[#FF7272]/10 border-2 border-gray-100 transition-all duration-300">
-        <div class="px-4 py-12 flex flex-col justify-center">
-          <button class="mx-32 py-4 px-6 rounded-full text-black font-bold bg-[#ECECEC] transition-all duration-300 hover:bg-[#FF7272] hover:text-[#FFFFFF]">AmanHasil</button>
-          <p class="my-4 text-center">Memusatkan segala informasi dari sumber sumber yang kredibel, hal ini juga mencegah kamu mengurangi resiko informasi hoax.</p>
+        <div class="px-12 py-12 flex flex-col justify-center">
+          <button class="mx-24 py-4 px-6 rounded-full text-black font-bold bg-[#ECECEC] transition-all duration-300 hover:bg-[#FF7272] hover:text-[#FFFFFF]">AmanHasil</button>
+          <p class="my-7 text-center">Memusatkan segala informasi dari sumber sumber yang kredibel, hal ini juga mencegah kamu mengurangi resiko informasi hoax.</p>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center ">
           <img class=" " src="assets/p2.png" alt="demoapp" />
         </div>
       </div>
@@ -245,12 +245,15 @@
 
     <div class="max-w-screen-2xl mx-auto py-16 mt-32">
       <!-- Judul -->
-      <div class="text-center mb-24">
-        <h1 class="text-5xl font-bold text-black mb-4" style="font-family: 'Plus Jakarta Sans'">
-          Keamanan dan Kepercayaan
-          <br />adalah yang Utama
-        </h1>
-        <p class="text-gray-600 mt-12" style="font-family: 'Plus Jakarta Sans'">Untuk menjamin demokrasi yang aman dan dapat dipercaya kami menggunakan pendekatan sebagai berikut</p>
+      <div class="flex flex-col items-center justify-start text-center mb-24">
+        <div class="flex flex-col max-w-[800px] p-4">
+          <h1 class="text-[52px] leading-[72px] font-semibold text-black mb-4">
+            Keamanan dan Kepercayaan adalah yang Utama
+          </h1>
+        </div>
+        <p class="text-gray-600 mt-2" style="font-family: 'Plus Jakarta Sans'">
+          Untuk menjamin demokrasi yang aman dan dapat dipercaya kami menggunakan pendekatan sebagai berikut
+        </p>
       </div>
 
       <!-- Konten -->
