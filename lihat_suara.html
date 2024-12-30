@@ -1,372 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lihat Suara - AmanMemilih</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-50 text-gray-800" style="font-family: 'Plus Jakarta Sans'">
-    <!-- Header -->
-    <nav>
-      <header class="bg-white fixed top-0 left-0 w-full z-50">
-        <div class="flex mx-auto pl-32 pr-32 px-4 py-6 flex items-center justify-between">
-          <div class="flex items-center space-x-2">
-            <a href="index.html">
-              <img src="assets/logoam.png" alt="Logo" class="h-14 w-auto" />
-            </a>
-          </div>
-          <nav class="flex space-x-6">
-            <a href="#" class="text-lg text-gray-800 px-2 py-2.5 hover:text-[#FF7272]">Tentang</a>
-            <a href="#" class="text-lg text-gray-800 px-2 py-2.5 hover:text-[#FF7272]">Cara Kerja</a>
-            <a href="#" class="text-lg text-gray-800 px-2 py-2.5 hover:text-[#FF7272]">Teknologi</a>
-            <a href="#" class="text-lg text-gray-800 px-4 py-2.5 hover:text-[#FF7272]">Berita</a>
-            <a href="lihat_suara.html" class="text-lg px-6 py-2.5 rounded-xl text-white bg-[#FF7272] transition-all duration-300 hover:bg-[#FF5252] hover:text-white">Lihat Suara</a>
-          </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lihat Suara - AmanMemilih</title>
+  <link rel="icon" type="image/x-icon" href="assets/icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-800" style="font-family: 'Plus Jakarta Sans'">
+  <!-- Header -->
+  <nav>
+    <header class="bg-white fixed top-0 left-0 w-full z-50">
+      <div class="flex mx-auto pl-32 pr-32 px-4 py-6 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <a href="index.html">
+            <img src="assets/logoam.png" alt="Logo" class="h-14 w-auto" />
+          </a>
         </div>
-      </header>
-    </nav>
+        <nav class="flex space-x-6">
+          <a href="#" class="text-lg text-gray-800 px-2 py-2.5 hover:text-[#FF7272]">Tentang</a>
+          <a href="#" class="text-lg text-gray-800 px-2 py-2.5 hover:text-[#FF7272]">Cara Kerja</a>
+          <a href="#" class="text-lg text-gray-800 px-2 py-2.5 hover:text-[#FF7272]">Teknologi</a>
+          <a href="#" class="text-lg text-gray-800 px-4 py-2.5 hover:text-[#FF7272]">Berita</a>
+          <a href="lihat_suara.html"
+            class="text-lg px-6 py-2.5 rounded-xl text-white bg-[#FF7272] transition-all duration-300 hover:bg-[#FF5252] hover:text-white">Lihat
+            Suara</a>
+        </nav>
+      </div>
+    </header>
+  </nav>
 
-    <!-- Hero Section -->
-    <main class="relative max-w-screen-lg mx-auto px-4 py-16 text-center mt-[80px]">
-      <h1 class="text-5xl font-bold mb-4 relative z-10" style="font-family: 'Plus Jakarta Sans'">
-        Pantau real count Presiden <br />
-        dan Wakil Presiden
-      </h1>
-      <br />
-      <p class="text-gray-500 mb-8 relative z-10">Terakhir diperbarui pada jam 14:06 WIB</p>
+  <!-- Particle.js Background -->
+  <div id="particles-js" class="absolute inset-0 z-0 overflow-hidden mt-24 opacity-50">
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#3A3A3A",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#3A3A3A",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </div>
+
+  <!-- Hero Section -->
+  <main class="relative max-w-screen-lg mx-auto px-4 py-16 text-center mt-[80px]">
+    <div class="flex flex-col items-center justify-start text-center mb-24">
+      <div class="flex flex-col max-w-[800px] p-4">
+        <h1 class="text-[52px] leading-[72px] font-semibold text-black mb-4">
+          Pantau hasil real count Presiden dan Wakil Presiden
+        </h1>
+      </div>
+      <p class="text-gray-600 mt-2">
+        Terakhir diperbarui pada jam 14:06 WIB
+      </p>
+    </div>
 
 
-      <!-- Paslon Percentage Section -->
-      <div class="flex justify-center gap-6 mt-10 px-4 relative z-10">
+    <!-- Paslon Percentage Section -->
+    <div class="flex justify-center gap-6 mt-10 px-4 relative z-10">
 
-        <!-- Kartu Kandidat 1 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative">
+      <!-- Kartu Kandidat 1 -->
+      <div
+        class="relative z-10 backdrop-blur-md bg-[#3A3A3A]/5 rounded-lg overflow-hidden w-[380px] h-[350px] text-center">
         <!-- Nomor Kandidat -->
         <div
           class="absolute top-[150px] left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#FF7272] text-white rounded-full flex items-center justify-center font-semibold text-[28px] z-10"
-          style="font-family: 'Plus Jakarta Sans'"
-        >
+          style="font-family: 'Plus Jakarta Sans'">
           1
         </div>
-      
+
         <!-- Foto Kandidat -->
         <div class="h-[174px] flex justify-center items-center  ">
-          <img
-            src="assets/paslon1.svg"
-            alt="Kandidat 1"
-            class="h-auto w-auto max-w-full max-h-full mt-4"
-          />
+          <img src="assets/paslon1.svg" alt="Kandidat 1" class="h-auto w-auto max-w-full max-h-full mt-4" />
         </div>
-      
+
         <!-- Nama dan Persentase -->
         <div class="p-4">
-          <h3
-            class="max-w-full mt-8 whitespace-nowrap text-[28.97px] font-medium text-gray-800"
-            style="font-family: 'Plus Jakarta Sans'"
-          >
-            Anis & Imin
+          <h3 class="max-w-full mt-8 whitespace-nowrap text-[28px] font-medium text-gray-800"
+            style="font-family: 'Plus Jakarta Sans'">
+            Anies dan Cak Imin
           </h3>
-          <p
-            class="text-[43.46px] font-semibold mt-2 text-gray-900"
-            style="font-family: 'Plus Jakarta Sans'"
-          >
+          <p class="text-[42px] font-semibold mt-2 text-gray-900" style="font-family: 'Plus Jakarta Sans'">
             25,0%
           </p>
         </div>
       </div>
-  
-        <!-- Kartu Kandidat 2 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative">
+
+      <!-- Kartu Kandidat 2 -->
+      <div class="relative backdrop-blur-xl bg-[#3A3A3A]/5 rounded-lg overflow-hidden w-[380px] h-[350px] text-center">
         <!-- Nomor Kandidat -->
         <div
           class="absolute top-[150px] left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#FF7272] text-white rounded-full flex items-center justify-center font-semibold text-[28px] z-10"
-          style="font-family: 'Plus Jakarta Sans'"
-        >
+          style="font-family: 'Plus Jakarta Sans'">
           2
         </div>
-      
+
         <!-- Foto Kandidat -->
         <div class="h-[174px] flex justify-center items-center  ">
-          <img
-            src="assets/paslon2.svg"
-            alt="Kandidat 1"
-            class="h-auto w-auto max-w-full max-h-full mt-4"
-          />
+          <img src="assets/paslon2.svg" alt="Kandidat 1" class="h-auto w-auto max-w-full max-h-full mt-4" />
         </div>
-      
+
         <!-- Nama dan Persentase -->
         <div class="p-4">
-          <h3
-            class="max-w-full mt-8 whitespace-nowrap text-[28.97px] font-medium text-gray-800"
-            style="font-family: 'Plus Jakarta Sans'"
-          >
-            Pranomo & Fafa
+          <h3 class="max-w-full mt-8 whitespace-nowrap text-[28px] font-medium text-gray-800"
+            style="font-family: 'Plus Jakarta Sans'">
+            Prabowo dan Gibran
           </h3>
-          <p
-            class="text-[43.46px] font-semibold mt-2 text-gray-900"
-            style="font-family: 'Plus Jakarta Sans'"
-          >
+          <p class="text-[42px] font-semibold mt-2 text-gray-900" style="font-family: 'Plus Jakarta Sans'">
             80,0%
           </p>
         </div>
       </div>
-  
-        <!-- Kartu Kandidat 3 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[350px] text-center relative">
+
+      <!-- Kartu Kandidat 3 -->
+      <div class="relative backdrop-blur-xl bg-[#3A3A3A]/5 rounded-lg overflow-hidden w-[380px] h-[350px] text-center">
         <!-- Nomor Kandidat -->
         <div
           class="absolute top-[150px] left-1/2 transform -translate-x-1/2 w-16 h-16 bg-[#FF7272] text-white rounded-full flex items-center justify-center font-semibold text-[28px] z-10"
-          style="font-family: 'Plus Jakarta Sans'"
-        >
+          style="font-family: 'Plus Jakarta Sans'">
           3
         </div>
-      
+
         <!-- Foto Kandidat -->
         <div class="h-[174px] flex justify-center items-center  ">
-          <img
-            src="assets/paslon3.svg"
-            alt="Kandidat 1"
-            class="h-auto w-auto max-w-full max-h-full mt-4"
-          />
+          <img src="assets/paslon3.svg" alt="Kandidat 1" class="h-auto w-auto max-w-full max-h-full mt-4" />
         </div>
-      
+
         <!-- Nama dan Persentase -->
         <div class="p-4">
-          <h3
-            class="max-w-full mt-8 whitespace-nowrap text-[28.97px] font-medium text-gray-800"
-            style="font-family: 'Plus Jakarta Sans'"
-          >
-            Giananjar & Mahmut
+          <h3 class="max-w-full mt-8 whitespace-nowrap text-[28px] font-medium text-gray-800"
+            style="font-family: 'Plus Jakarta Sans'">
+            Ganjar dan Mahfud
           </h3>
-          <p
-            class="text-[43.46px] font-semibold mt-2 text-gray-900"
-            style="font-family: 'Plus Jakarta Sans'"
-          >
+          <p class="text-[42px] font-semibold mt-2 text-gray-900" style="font-family: 'Plus Jakarta Sans'">
             50,0%
           </p>
         </div>
       </div>
-      
-      </div>
-    </main>
 
-    <!-- Particle.js Background -->
-    <div id="particles-js" class="absolute left-0 right-0 top-0 bottom-0 z-0 overflow-hidden mt-24 opacity-50">
-      <script>
-        particlesJS("particles-js", {
-          particles: {
-            number: {
-              value: 80,
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-            },
-            color: {
-              value: "#3A3A3A",
-            },
-            shape: {
-              type: "circle",
-              stroke: {
-                width: 0,
-                color: "#000000",
-              },
-              polygon: {
-                nb_sides: 5,
-              },
-              image: {
-                src: "img/github.svg",
-                width: 100,
-                height: 100,
-              },
-            },
-            opacity: {
-              value: 0.5,
-              random: false,
-              anim: {
-                enable: false,
-                speed: 1,
-                opacity_min: 0.1,
-                sync: false,
-              },
-            },
-            size: {
-              value: 3,
-              random: true,
-              anim: {
-                enable: false,
-                speed: 40,
-                size_min: 0.1,
-                sync: false,
-              },
-            },
-            line_linked: {
-              enable: true,
-              distance: 150,
-              color: "#3A3A3A",
-              opacity: 0.4,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              speed: 6,
-              direction: "none",
-              random: false,
-              straight: false,
-              out_mode: "out",
-              bounce: false,
-              attract: {
-                enable: false,
-                rotateX: 600,
-                rotateY: 1200,
-              },
-            },
-          },
-          interactivity: {
-            detect_on: "canvas",
-            events: {
-              onhover: {
-                enable: true,
-                mode: "repulse",
-              },
-              onclick: {
-                enable: true,
-                mode: "push",
-              },
-              resize: true,
-            },
-            modes: {
-              grab: {
-                distance: 400,
-                line_linked: {
-                  opacity: 1,
-                },
-              },
-              bubble: {
-                distance: 400,
-                size: 40,
-                duration: 2,
-                opacity: 8,
-                speed: 3,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-              push: {
-                particles_nb: 4,
-              },
-              remove: {
-                particles_nb: 2,
-              },
-            },
-          },
-          retina_detect: true,
-        });
-      </script>
     </div>
+  </main>
 
-    <!-- Form Section -->
-    <div class=" max-w-screen-full mx-auto px-4 py-16 text-center">
-        <h1 class="text-[40px] font-bold mb-8 relative z-10" style="font-family: 'Plus Jakarta Sans'">
-            Cari berdasarkan daerah anda
-        </h1>
+  <!-- Form Section -->
+  <div class=" max-w-screen-full mx-auto px-4 py-16 text-center">
+    <h1 class="text-[40px] font-bold mb-8 relative z-10" style="font-family: 'Plus Jakarta Sans'">
+      Cari berdasarkan daerah anda
+    </h1>
 
-        <div class="w-full max-w-6xl mx-auto p-6 bg-white rounded-lg"
-        style="box-shadow: 0px 4px 10px rgba(255, 114, 114, 0.08);">
-            <!-- Form Row Pertama -->
-            <div class="flex flex-wrap gap-4 mb-4">
-              <!-- Pilih Provinsi -->
-              <div class="flex-1">
-                <select class="w-full p-2 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]" style="font-family: 'Plus Jakarta Sans'">
-                  <option selected disabled>Pilih Provinsi</option>
-                </select>
-              </div>
-              <!-- Pilih Kota/Kabupaten -->
-              <div class="flex-1">
-                <select class="w-full p-2 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]" style="font-family: 'Plus Jakarta Sans'">
-                  <option selected disabled>Pilih Kota/Kabupaten</option>
-                </select>
-              </div>
-            </div>
-          
-            <!-- Form Row Kedua -->
-            <div class="flex flex-wrap gap-4 mb-4">
-              <!-- Pilih Kelurahan -->
-              <div class="flex-1">
-                <select class="w-full p-2 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]" 
-                style="font-family: 'Plus Jakarta Sans'"> 
-                  <option selected disabled>Pilih Kelurahan</option>
-                </select>
-              </div>
-              <!-- Pilih Kecamatan -->
-              <div class="flex-1">
-                <select class="w-full p-2 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]" 
-                style="font-family: 'Plus Jakarta Sans'">
-                  <option selected disabled>Pilih Kecamatan</option>
-                </select>
-              </div>
-            </div>
-          
-            <!-- Form Row Ketiga -->
-            <div class="flex flex-wrap gap-4 items-center">
-              <!-- Pilih TPS -->
-              <div class="flex-1">
-                <select class="w-full p-2 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]" 
-                style="font-family: 'Plus Jakarta Sans'">
-                  <option selected disabled>Pilih TPS</option>
-                </select>
-              </div>
-              <!-- Tombol Cari -->
-              <div>
-                <a href="hasil.html" class="px-16 py-2 text-lg px-4 py-2 rounded-3xl text-white bg-[#FF7272] transition-all duration-300 hover:bg-red-500 hover:text-white hover:border hover:border-gray-300" 
-                style="font-family: 'Plus Jakarta Sans'">Cari</a>
-              </div>
-            </div>
-          </div>
-    </div>
-    
-
-    <!-- Footer -->
-    <footer class="w-full bg-white py-8 px-22">
-      <div class="max-w-screen-lg mx-auto text-center mb-5 mt-16">
-        <p class="text-[52px] font-medium bg-gradient-to-r from-[#FFD596] to-[#FF7272] text-transparent bg-clip-text mb-5" style="font-family: 'Plus Jakarta Sans'">Pantau, Laporkan, Aman.</p>
-        <span class="text-black text-[44px] font-bold mr-1" style="font-family: 'Plus Jakarta Sans'">Aman</span><span class="text-[#FF7272] text-[44px] font-bold" style="font-family: 'Plus Jakarta Sans'">Memilih</span>
-      </div>
-
-      <div class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mt-14 py-5">
-        <div class="mt-10 mx-24">
-          <div class="flex justify-left items-center space-x-4">
-            <a href="index.html">
-              <img src="assets/logoam.png" alt="Logo" class="h-20 w-auto" />
-            </a>
-          </div>
-          <div class="pt-10 text-left">
-            <p class="text-[18px] text-[#A6A6A6]">Prototype by AmanMemilih</p>
-            <p class="text-[16px] text-[#A6A6A6]">Disclaimer | Privacy Policy</p>
-          </div>
+    <div class="w-full max-w-6xl mx-auto px-[40px] py-[52px] bg-white rounded-2xl shadow-2xl shadow-[#FF7272]/10 border border-[#FFECEC]">
+      <!-- Form Row Pertama -->
+      <div class="flex flex-wrap gap-4 mb-7">
+        <!-- Pilih Provinsi -->
+        <div class="flex-1 mr-2">
+          <select
+            class="w-full p-3 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]"
+            style="font-family: 'Plus Jakarta Sans'">
+            <option selected disabled>Pilih Provinsi</option>
+          </select>
         </div>
-
-        <div class="flex flex-col items-start mx-24 md:items-center mt-6 md:mt-20 space-y-1">
-          <p class="text-sm text-gray-500 mb-2 text-center">Connect With Us</p>
-          <div class="flex space-x-2">
-            <!-- Ikon Facebook -->
-            <a href="#" class="w-8 h-8 flex items-center justify-center hover:bg-gray-250 ">
-              <img src="assets/logo_facebook.png" alt="Logo" class="h-5 w-auto"/>
-            </a>
-            <!-- Ikon Instagram -->
-            <a href="#" class="w-8 h-8 flex items-center justify-center hover:bg-gray-250">
-              <img src="assets/logo_ig.png" alt="Logo" class="h-6 w-auto"/>
-            </a>
-            <!-- Ikon X -->
-            <a href="#" class="w-8 h-8 flex items-center justify-center hover:bg-gray-250">
-              <img src="assets/logo_x.png" alt="Logo" class="h-6 w-auto"/>
-            </a>
-          </div>
+        <!-- Pilih Kota/Kabupaten -->
+        <div class="flex-1">
+          <select
+            class="w-full p-3 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]"
+            style="font-family: 'Plus Jakarta Sans'">
+            <option selected disabled>Pilih Kota/Kabupaten</option>
+          </select>
         </div>
       </div>
-    </footer>
+
+      <!-- Form Row Kedua -->
+      <div class="flex flex-wrap gap-4 mb-7">
+        <!-- Pilih Kelurahan -->
+        <div class="flex-1 mr-2">
+          <select
+            class="w-full p-3 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]"
+            style="font-family: 'Plus Jakarta Sans'">
+            <option selected disabled>Pilih Kelurahan</option>
+          </select>
+        </div>
+        <!-- Pilih Kecamatan -->
+        <div class="flex-1">
+          <select
+            class="w-full p-3 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]"
+            style="font-family: 'Plus Jakarta Sans'">
+            <option selected disabled>Pilih Kecamatan</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Form Row Ketiga -->
+      <div class="flex flex-wrap gap-4 items-center">
+        <!-- Pilih TPS -->
+        <div class="flex-1 mr-2">
+          <select
+            class="w-full p-3 border border-gray-250 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-[#ABABAB]"
+            style="font-family: 'Plus Jakarta Sans'">
+            <option selected disabled>Pilih TPS</option>
+          </select>
+        </div>
+        <!-- Tombol Cari -->
+        <div>
+          <a href="hasil.html"
+            class="px-16 py-3 text-lg rounded-3xl text-white bg-[#FF7272] transition-all duration-300 hover:bg-red-500 hover:text-white hover:border hover:border-gray-300"
+            style="font-family: 'Plus Jakarta Sans'">Cari</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w-full bg-white py-8 pt-20">
+    <div class="max-w-screen-xl mx-auto text-center mb-5 mt-16">
+      <p
+        class="text-[52px] font-medium bg-gradient-to-r from-[#FFB84E] from-[0%] via-[#FF8787] via-[63%] to-[#FF7272] to-[100%] text-transparent bg-clip-text mb-5">
+        Pantau, Laporkan, Aman.</p>
+      <span class="text-black text-[44px] font-semibold">Aman</span><span
+        class="text-[#FF7272] text-[44px] font-semibold">Memilih</span>
+    </div>
+
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mt-14 py-5">
+      <div>
+        <div class="flex justify-left items-center space-x-4">
+          <a href="index.html">
+            <img src="assets/logoam.png" alt="Logo" class="h-20 w-auto" />
+          </a>
+        </div>
+        <div class="pt-4 text-left">
+          <p class="text-[18px] text-[#A6A6A6]">Designed by AmanMemilih</p>
+          <p class="text-[16px] leading-[32px] text-[#A6A6A6]">Disclaimer | Privacy Policy</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-end md:items-end mt-6 md:mt-20 space-y-1">
+        <p class="text-[18px] text-gray-500 text-center">Connect With Us</p>
+        <div class="flex space-x-2">
+          <!-- Ikon Facebook -->
+          <a href="#" class="w-[36px] h-[36px] flex items-center justify-center hover:bg-gray-300 ">
+            <img src="assets/logo_facebook.png" alt="Logo" class="h-[24px] w-auto" />
+          </a>
+          <!-- Ikon Instagram -->
+          <a href="#" class="w-[36px] h-[36px] flex items-center justify-center hover:bg-gray-300">
+            <img src="assets/logo_ig.png" alt="Logo" class="h-[28px] w-auto" />
+          </a>
+          <!-- Ikon X -->
+          <a href="#" class="w-[36px] h-[36px] flex items-center justify-center hover:bg-gray-300">
+            <img src="assets/logo_x.png" alt="Logo" class="h-[28px] w-auto" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </html>
